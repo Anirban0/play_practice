@@ -1,0 +1,7 @@
+@(userData: Seq[String])
+@main("User Details"){
+<h1>User Details</h1>
+<h2> Email : @userData(0)</h2>
+<h2> Password : @userData(1)</h2>
+<a href="/logout">logout</a>
+}

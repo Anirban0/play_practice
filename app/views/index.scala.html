@@ -1,0 +1,11 @@
+@()(implicit request: Request[AnyContent])
+@main("Welcome to Play") {
+  <h1>Home Page!</h1>
+@if(!request.session.get("connected")){
+
+<a href="/login">Login</a>
+}else{
+<a href="/logout">logout</a>
+}
+
+}
